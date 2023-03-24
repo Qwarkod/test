@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlameShop-Каталог</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <div id="logo" onclick="slowScroll('#top')">
+            <span>Flameshop-Каталог</span>
+        </div>
+        <div id="about">
+            <a href="file:///C:/Users/%D0%90%D0%BD%D0%B4%D1%80%D1%96%D0%B9/Desktop/site/index.html" title="Головна" onclick="slowScroll('#main')">Головна</a>
+            <a href="file:///C:/Users/%D0%90%D0%BD%D0%B4%D1%80%D1%96%D0%B9/Desktop/site/indexhelp.html" title="Допомога" onclick="slowScroll('#main')">Допомога</a>
+        </div>
+    </header>
+
+<div id="overview">
+    <h1>↓Каталог↓</h1>
+    <hr>
+    <div class="img">
+        <a href="file:///C:/Users/%D0%90%D0%BD%D0%B4%D1%80%D1%96%D0%B9/Desktop/site/indexgerl.html">
+            <img src="gerlbataareyka/gg.jpg" alt="" width="500" height="">
+        </a>
+            <span><h4>↑Герлянди↑</h4></span>
+    </div>
+    <div class="img">
+        <a href="file:///C:/Users/%D0%90%D0%BD%D0%B4%D1%80%D1%96%D0%B9/Desktop/site/indexballs.html"><img src="https://decorize.com.ua/image/catalog/2021/11.%20(2).%202021/DSC_1132.JPG" alt="" width="400" height="400"></a>
+        <span><h4>↑Різдвяні шаріки↑</h4></span>
+    </div>
+    <div class="img">
+        <a href="file:///C:/Users/%D0%90%D0%BD%D0%B4%D1%80%D1%96%D0%B9/Desktop/site/indexvink.html"><img src="https://family-flowers.com.ua/wp-content/uploads/2020/11/DSC_7021-1.jpg" alt="" width="400" height="400"></a>
+        <span><h4>↑Віночки↑</h4></span>
+    <div class="img">
+        <a href="file:///C:/Users/%D0%90%D0%BD%D0%B4%D1%80%D1%96%D0%B9/Desktop/site/indexflov.html"><img src="https://oneprice.ua/content/uploads/images/iskusstvennye-cvety.jpg" alt="" width="400" height="400"></a>
+        <span><h4>↑Квіти (стучні)↑</h4></span>
+    </div>
+</div>
+
+<div id="faq" style="color: black;">
+    <div>
+        <span class="title">Оплата</span><br>
+        <span class="heading">Як буде проходити оплата?</span><br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, blanditiis dolor! Voluptas deserunt, obcaecati hic sunt minima sit iste illo maxime quas 
+        sapiente molestias quisquam rerum quis inventore aut laudantium!</p>
+    </div>
+    <div>
+        <span class="title">Оплата</span><br>
+        <span class="heading">Як буде проходити оплата?</span><br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, blanditiis dolor! Voluptas deserunt, obcaecati hic sunt minima sit iste illo maxime quas 
+        sapiente molestias quisquam rerum quis inventore aut laudantium!</p>
+    </div>
+    <div>
+        <span class="title">Оплата</span><br>
+        <span class="heading">Як буде проходити оплата?</span><br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, blanditiis dolor! Voluptas deserunt, obcaecati hic sunt minima sit iste illo maxime quas 
+        sapiente molestias quisquam rerum quis inventore aut laudantium!</p>
+    </div>
+</div>
+
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        function slowScroll() {
+            $('html', 'body').animate({
+              scrollTop: $(id).offset().top  
+            }, 1000);
+        }
+
+        $(document).on("scroll", function () {
+            if($(window).scrollTop() === 0)
+                $("header").removeClass("fixed");
+            else
+                $("header").attr("class", "fixed");
+        });
+    </script>
+</body>
+</html>

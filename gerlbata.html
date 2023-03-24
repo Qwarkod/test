@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlameShop</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <div id="logo" onclick="slowScroll('#top')">
+            <span>Flameshop-Каталог-Каталог-Герляда</span>
+        </div>
+        <div id="about">
+            <a href="file:///C:/Users/%D0%90%D0%BD%D0%B4%D1%80%D1%96%D0%B9/Desktop/site/indexhelp.html" title="Допомога" onclick="slowScroll('#main')">Допомога</a>
+            <a href="file:///C:/Users/%D0%90%D0%BD%D0%B4%D1%80%D1%96%D0%B9/Desktop/site/index.html" title="Головна" onclick="slowScroll('#main')">Головна</a>
+        </div>
+    </header>
+
+<div id="overview">
+    <h1><b>↓Допомога↓</b></h1>
+    <hr>
+    <div class="img">
+        <p><img src="gerlbataareyka/IMG_20230324_210207.jpg" alt="" width="800" height="600"></p>
+        <div style="text-align: center;" id="logo" id="faq">
+            <h1>Герлянда робить на пальчикових батарейках(3шт.) на картинці герлянда 10метрів</h1>
+            <h2>Кольри:синий, різнокольоровий, жовтий, зелений</h2>
+        </div>
+    </div>
+
+
+<div id="faq" style="color: black;">
+    <div>
+        <span class="title">Оплата</span><br>
+        <span class="heading">Як буде проходити оплата?</span><br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, blanditiis dolor! Voluptas deserunt, obcaecati hic sunt minima sit iste illo maxime quas 
+        sapiente molestias quisquam rerum quis inventore aut laudantium!</p>
+    </div>
+    <div>
+        <span class="title">Покупка</span><br>
+        <span class="heading">Звонити за номером {nomer}</span><br>
+        <p></p>
+    </div>
+    <div>
+        <span class="title">Оплата</span><br>
+        <span class="heading">Як буде проходити оплата?</span><br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, blanditiis dolor! Voluptas deserunt, obcaecati hic sunt minima sit iste illo maxime quas 
+        sapiente molestias quisquam rerum quis inventore aut laudantium!</p>
+    </div>
+</div>
+
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        function slowScroll() {
+            $('html', 'body').animate({
+              scrollTop: $(id).offset().top  
+            }, 1000);
+        }
+
+        $(document).on("scroll", function () {
+            if($(window).scrollTop() === 0)
+                $("header").removeClass("fixed");
+            else
+                $("header").attr("class", "fixed");
+        });
+    </script>
+</body>
+</html>
